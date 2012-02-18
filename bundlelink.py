@@ -1,8 +1,10 @@
 #!/usr/local/bin/python3
 
-# 一括でsymlinkを貼る
+# 一括でsymlinkを貼る。
 # $ bundlelink ~/Garage/Toybox/toys/**/bin/* .
-# みたいな感じでリンクを張る
+# みたいな感じにワイルドカードも使ってリンクを張るのが理想。
+# 今はリンク元とリンク先のディレクトリ指定で動作する。
+# $ bundlelink ~/Garage/Toybox/toys .
 
 import os
 import glob
