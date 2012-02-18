@@ -1,0 +1,15 @@
+usage: bundlelink.py [-h] [-a] [-r] [-w] [-x] [--noextension] src_dir dest_dir
+
+bundlelink : make many symlink in a lump.
+
+positional arguments:
+  src_dir
+  dest_dir
+
+optional arguments:
+  -h, --help        show this help message and exit
+  -a                select any permission files.
+  -r, --readable    select read enable files.
+  -w, --writable    select write enable files.
+  -x, --executable  select execute enable files.
+  --noextension     leave out extension from symlink name.
