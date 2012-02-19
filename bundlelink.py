@@ -30,24 +30,24 @@ def BundleLink(src_dir, dest_dir, permission, remove_extension):
 
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser(description='bundlelink : make many symlink in a lump.')
+	parser = argparse.ArgumentParser(description='bundlelink : make many symlink in a lump')
 	parser.add_argument('src_dir', type=str)
 	parser.add_argument('dest_dir', type=str)
 	parser.add_argument('-a', 
 			action='store_true', dest='permission_a',
-			help='select any permission files.')
+			help='select any permission files [default]')
 	parser.add_argument('-r','--readable', 
 			action='store_true', dest='permission_r',
-			help='select read enable files.')
+			help='select read enable files')
 	parser.add_argument('-w','--writable', 
 			action='store_true', dest='permission_w',
-			help='select write enable files.')
+			help='select write enable files')
 	parser.add_argument('-x','--executable', 
 			action='store_true', dest='permission_x',
-			help='select execute enable files.')
+			help='select execute enable files')
 	parser.add_argument('--noextension', 
 			action='store_true', dest='remove_extension',
-			help='leave out extension from symlink name.')
+			help='leave out extension from symlink name')
 	args = parser.parse_args();
 
 	permission = 0
